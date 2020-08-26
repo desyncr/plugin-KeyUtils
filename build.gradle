@@ -19,6 +19,7 @@ repositories {
     mavenLocal()
     maven { url "http://4thline.org/m2" }
     maven { url 'https://mvn.freenetproject.org' }
+    maven { url 'https://jitpack.io' }
     jcenter()
 }
 
@@ -27,7 +28,8 @@ configurations {
 }
 
 dependencies {
-    compile group: 'org.freenetproject', name: 'fred', version: 'build+'
+    compile group: 'com.github.freenet-mobile', name: 'fred', version: '1486.4m'
+    compile group: 'ant', name: 'ant', version: '1.6.5'
 }
 
 def gitrev
